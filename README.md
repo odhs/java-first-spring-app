@@ -84,7 +84,15 @@ my-project/
 
 - **`application.properties`** ou **`application.yml`**  
   Arquivos de configuração do _Spring Boot_.  
-  Ex: porta do servidor, configurações de banco de dados, perfis, etc.
+  Ex: porta do servidor, configurações de banco de dados, perfis, etc:
+  
+  ```sh
+  spring.application.name=first-spring-app
+  server.port=3000
+  spring.datasource.url=${DB_HOST:jdbc:mysql://localhost:3306/springapp}
+  spring.datasource.username=root
+  spring.datasource.password=123456
+  ```
 
 - 📂 **`static/`**  
   Pasta para arquivos estáticos (ex: HTML, CSS, JS, imagens). O _Spring Boot_ serve esses arquivos automaticamente via HTTP.
@@ -126,6 +134,5 @@ O Spring trabalha por meio de anotações, a classe principal da aplicação é 
 
 `@RestController`, é um conjunto de `@Controller` e `@ResponseBody`
 o controler é para a regra de negócio, e o responseBody
-
 
 Continua...
