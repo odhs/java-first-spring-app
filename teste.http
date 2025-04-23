@@ -1,0 +1,17 @@
+# To use this file, open it in VSCode/VSCodium
+# with the REST Client extension installed in VSCode/VSCodium.
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+# Then click on "Send Request" above each request.
+# You can also use the command "REST Client: Send Request" (Ctrl+Alt+R) to send the request.
+
+###
+POST http://localhost:8080/hello-world/000456?filter=algum HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Sérgio",
+    "email": "teste@emailserver.com"
+}
+
+###
+GET http://localhost:8080/hello-world HTTP/1.1

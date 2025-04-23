@@ -22,7 +22,7 @@ O Grupo é o domínio, por exemplo, `br.com.shdo`
 
 - _Lombok_: Biblioteca para geração de código _boilerplate_
 
-## 📦 Estrutura de Projeto _Spring Boot_ (Gerado pelo start.spring.io)
+## 📦 Estrutura de um Projeto _Spring Boot_ (Gerado pelo start.spring.io)
 
 ### 📁 Estrutura de Diretórios e Arquivos
 
@@ -130,7 +130,7 @@ O Spring trabalha por meio de anotações, a classe principal da aplicação é 
 
 - Permite que o Spring scaneie o projeto e gerencie a injeção de dependências das classes e o ciclo de vida de cada uma delas
 
-### Controlers
+### _Controllers_
 
 `@RestController`, é um conjunto de `@Controller` e `@ResponseBody`
 o controler é para a regra de negócio, e o responseBody
