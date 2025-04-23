@@ -1,5 +1,7 @@
 package br.com.shdo.first_spring_app.controller;
 
+import java.text.MessageFormat;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -51,13 +53,9 @@ public class HelloWorldController {
   @PostMapping("/{id}")
   public String helloWorldPost(
       @PathVariable("id") String id,
-      @RequestParam(value = "filter", defaultValue = "nenhum") String filter,
+      @RequestParam(defaultValue = "nenhum") String filter,
       @RequestBody User body) {
-    return "Hello World " +
-        body.getName() +
-        " email: " + body.getEmail() +
-        " id: " + id +
-        " filter: " + filter;
+    return MessageFormat.format("Hello World {0} email: {1} id: {2} filter: {3}", body.getName(), body.getEmail(), id, filter);
   }
 
 }
