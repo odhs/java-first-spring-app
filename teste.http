@@ -15,3 +15,6 @@ content-type: application/json
 
 ###
 GET http://localhost:8080/hello-world HTTP/1.1
+
+###
+GET http://localhost:8080/hello-error HTTP/1.1
